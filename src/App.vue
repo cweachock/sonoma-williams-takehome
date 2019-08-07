@@ -43,6 +43,7 @@ export default {
   flex-wrap:wrap;
   max-width: 1108px;
   margin: 0 auto;
+  padding-left:0;
 }
 
  h1,h2,h3,h4,h5,p{
