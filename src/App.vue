@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <textBlock v-bind:textHeader="myJson.name"/>
     <ul class="product-grid">
    <productCard
     v-for="data in myJson.groups"
@@ -17,6 +18,7 @@
 
 <script>
 import productCard from './components/productGridItem.vue'
+import textBlock from './components/textBlock.vue'
 import json from './json/data.json'
 
 export default {
@@ -27,7 +29,8 @@ export default {
               }
   },
   components: {
-    productCard
+    productCard,
+    textBlock
   }
 }
 </script>
